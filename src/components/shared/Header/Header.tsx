@@ -1,29 +1,24 @@
-import React from "react";
-import logo1 from "../../assets/Book-club-graphic-1.webp";
-import { Link } from "react-router-dom";
+import React from 'react';
+import logo from "../../assets/6842436.jpg";
+import { Link } from 'react-router-dom';
 const Header = () => {
-  const menuItems = (
-    <React.Fragment>
-      <li>
-        <Link className="text-white" to="/">
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link className="text-white" to="/signUp">
-          SignUp
-        </Link>
-      </li>
-
-      <li>
-        <Link className="text-white" to="/login">
-          Login
-        </Link>
-      </li>
-    </React.Fragment>
-  );
-  return (
-    <div className="navbar bg-base-100  bg-violet-700 flex justify-between">
+    const menuItems = (
+        <React.Fragment>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/signUp">SignUp</Link>
+          </li>
+    
+             <li>
+              <Link to="/login">Login</Link>
+            </li>
+   
+        </React.Fragment>
+    )
+    return (
+        <div className="navbar bg-base-100  bg-gradient-to-r from-white to-blue-500 flex justify-between">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -50,7 +45,7 @@ const Header = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          <img className="h-15 w-20" src={logo1} alt="" />
+          <img className="h-12 w-20" src={logo} alt=""  />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

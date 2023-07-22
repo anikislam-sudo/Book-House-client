@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.img1 {
+  background-image: url(/src/assets/5137843.jpg);
+}

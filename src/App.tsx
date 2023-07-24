@@ -1,10 +1,11 @@
 
 //import { decrement, incrementByAmount, increment } from "./redux/Features/Counter/counterSlice";
 
-import { Outlet, RouterProvider } from "react-router-dom";
-import routes from "./routes/router";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import { Outlet} from "react-router-dom";
+
+import Header from "./components/shared/Header/Header";
+import Footer from "./components/shared/Footer/Footer";
+
 
 //import { useAppDispatch, useAppSelector } from "./redux/hook/hook";
 function App() {

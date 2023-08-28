@@ -3,8 +3,8 @@ export interface IProduct {
   img: string;
   title: string;
   author: string;
-  Genre: string;
-  pubDate: string;
+  genre: string;
+  publicationDate: string;
   reviews:[];
   status?: boolean;
   rating?: number;
